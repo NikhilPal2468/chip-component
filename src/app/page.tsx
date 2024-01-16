@@ -9,17 +9,22 @@ export interface userProp {
 const users = [
   {
     name:"Nikhil",
-    email:"nikhilpal@gmail.com",
+    email:"nikhil@gmail.com",
     src:"",
   },
   {
-    name:"Aryan bakasur",
-    email:"hhjkh@dsadadasdj.com",
+    name:"Aryan",
+    email:"aryan@gmail.com",
     src:""
   },
   {
-    name:"Raja bakasur",
-    email:"raha@juj.com",
+    name:"Rajesh",
+    email:"rajesh@gmail.com",
+    src:""
+  },
+  {
+    name:"Vipul",
+    email:"vipul@gmail.com",
     src:""
   },
 ];
@@ -114,7 +119,7 @@ export default function Home() {
             className="mt-1 px-3 py-2 bg-white focus:outline-none block rounded-md sm:text-sm w-full"
             placeholder="Add new user..."
           />
-          <div className="absolute -bottom-60 left-0 bg-slate-50 shadow-md list-none min-h-60 max-h-60">
+          <div className="absolute -bottom-60 left-0 bg-slate-50 shadow-md list-none min-h-60 max-h-60 overflow-scroll">
             {isListVisible && (
               filteredItems.map((user) => (
                 <li key={user.name} className="p-2 cursor-pointer hover:bg-slate-300 min-w-96" 
